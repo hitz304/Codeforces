@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n;
+	int m,c;
+	int Cnt = 0;
+	cin >> n;
+	for(int i=0; i<n;i++){
+		cin >> m >> c;
+		if(m > c) Cnt++;
+		else if(m < c)Cnt--;
+	}
+	if(Cnt > 0) cout << "Mishka";
+	else if(Cnt == 0) cout << "Friendship is magic!^^";
+	else cout << "Chris";
+}
